@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Orquestrador</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">  
+
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/ionicons/css/ionicons.min.css">
+        <link rel="stylesheet" href="lib/tippyjs/tippy.css">
+        
+
+        <link href="https://fonts.googleapis.com/css?family=Dosis:400,500&amp;subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/tippyjs/tippy.min.js"></script>
+        <script src="js/theme.js"></script>
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+         <!-- CABECERA -->
+        <header>
+            <!-- Logo Empresa -->
+            <div id="logo_empresa" class="logo-empresa">
+                <h1>Orquestrador</h1>
+                <img src="img/sbt.png" alt="SBT" height="45px">
+            </div>
+            <nav class="navbar navbar-dark navbar-fixed-top">
+                <div class="header-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <!-- Usuario -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
+                                 <img src="img/4.jpg" alt="" width="40px" class="img-circle">
+                                 Luiz Ribeiro
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="icon ion-lock-combination"></i> Alterar Senha</a></li>
+                                <li><a href="index.html"><i class="icon ion-android-exit"></i> Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>            
+            </nav>
+        </header>
+        <!-- MENU PRINCIPAL LATERAL -->
+        <aside id="navaside" class="navmain mini">
+            <div class="side-head">
+                
+                <span id="toggle_aside" class="icon ion-navicon"></span>
+            </div>
+            <!-- Menu navegacion -->
+            <nav  class="navbar-toggleable-xs">
+                <ul class="nav leftnav">
+                    <li><a href="comercial.html"><i class="icon ion-archive"></i><span>Inbox Comercial</span></a></li>
+                    <li><a href="tecnico.html"><i class="icon ion-android-done-all"></i><span>Inbox Técnico</span></a></li>
+                    <li class="current"><a href="#"><i class="icon ion-paper-airplane"></i><span>Acompanhamento</span></a></li>
+                    <li><a href="seguimiento.html"><i class="icon ion-ios-clock-outline"></i><span>Histórico</span></a></li>
+                    <li><a href="conf.html"><i class="icon ion-android-options"></i><span>Configurações</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="container-fluid wrapcontent">
+            <div class="row heading-page">
+                <div class="col-md-6 col-sm-6">
+                    <h2><i class="icon ion-paper-airplane"></i> Acompanhamento</h2>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="icon ion-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <ul class="header-grid col-md-12">
+                    <li class="col-xs-1">Anunciante</li>
+                    <li class="col-xs-1">Marca</li>
+                    <li class="col-xs-1">Título Versão</li>
+                    <li class="col-xs-1">Duração</li>
+                    <li class="col-xs-1">Parceiro</li>
+                    <li class="col-xs-1">Aprovação</li>
+                    <li class="col-xs-1">Código Aprovação</li>
+                    <li class="col-xs-2">Emissora</li>
+                    <li class="col-xs-2">Status</li>
+                    <li class="col-xs-1">Tipo de Entrega</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12 list-grid">
+                    <ul class="list-delivery">
+                        <li>
+                            <ul class="body-grid">
+                                <li>
+                                    <div class="col-xs-1">MERCEDES-BENZ DO BRASIL</div>
+                                    <div class="col-xs-1">AUTOMÓVEIS</div>
+                                    <div class="col-xs-1">GLA INESPERADO 3DE5</div>
+                                    <div class="col-xs-1">00:30;00</div>
+                                    <div class="col-xs-1">A+V</div>
+                                    <div class="col-xs-1">2017-05-11 14:23:19</div>
+                                    <div class="col-xs-1">1357992002200</div>
+                                    <div class="col-xs-2">SBT - Anápolis</div>
+                                    <div class="col-xs-2">
+                                        <span class="label label-sm label-success">Entregado</span>
+
+                                    </div>
+                                    <div class="col-xs-1">Satélite</div>
+                                </li>
+                                <li>
+                                    <div class="col-xs-1">MERCEDES-BENZ DO BRASIL</div>
+                                    <div class="col-xs-1">AUTOMÓVEIS</div>
+                                    <div class="col-xs-1">GLA INESPERADO 3DE5</div>
+                                    <div class="col-xs-1">00:30;00</div>
+                                    <div class="col-xs-1">A+V</div>
+                                    <div class="col-xs-1">2017-05-11 14:23:19</div>
+                                    <div class="col-xs-1">1357992002200</div>
+                                    <div class="col-xs-2">SBT - Aracajú</div>
+                                    <div class="col-xs-2">
+                                        <span class="label label-sm label-danger">Error</span>
+                                    </div>
+                                    <div class="col-xs-1">Vía Link de Descarga</div>
+                                </li>
+                                <li>
+                                    <div class="col-xs-1">MERCEDES-BENZ DO BRASIL</div>
+                                    <div class="col-xs-1">AUTOMÓVEIS</div>
+                                    <div class="col-xs-1">GLA INESPERADO 3DE5</div>
+                                    <div class="col-xs-1">00:30;00</div>
+                                    <div class="col-xs-1">A+V</div>
+                                    <div class="col-xs-1">2017-05-11 14:23:19</div>
+                                    <div class="col-xs-1">1357992002200</div>
+                                    <div class="col-xs-2">SBT - Araxá</div>
+                                    <div class="col-xs-2">
+                                        <span class="label label-sm label-warning">Em Processo</span>
+                                        <img src="img/spinner2.gif" width="15px" alt="Em Proceso">
+                                    </div>
+                                    <div class="col-xs-1">FTP</div>
+                                </li>
+                                <li>
+                                    <div class="col-xs-1">MERCEDES-BENZ DO BRASIL</div>
+                                    <div class="col-xs-1">AUTOMÓVEIS</div>
+                                    <div class="col-xs-1">GLA INESPERADO 3DE5</div>
+                                    <div class="col-xs-1">00:30;00</div>
+                                    <div class="col-xs-1">A+V</div>
+                                    <div class="col-xs-1">2017-05-11 14:23:19</div>
+                                    <div class="col-xs-1">1357992002200</div>
+                                    <div class="col-xs-2">SBT - Bagé</div>
+                                    <div class="col-xs-2">
+                                        <span class="label label-sm label-warning">Em Processo</span>
+                                        <img src="img/spinner2.gif" width="15px" alt="Em Proceso">
+                                    </div>
+                                    <div class="col-xs-1">FTP</div>
+                                </li>
+                                <li>
+                                    <div class="col-xs-1">MERCEDES-BENZ DO BRASIL</div>
+                                    <div class="col-xs-1">AUTOMÓVEIS</div>
+                                    <div class="col-xs-1">GLA INESPERADO 3DE5</div>
+                                    <div class="col-xs-1">00:30;00</div>
+                                    <div class="col-xs-1">A+V</div>
+                                    <div class="col-xs-1">2017-05-11 14:23:19</div>
+                                    <div class="col-xs-1">1357992002200</div>
+                                    <div class="col-xs-2">SBT - Blumenau</div>
+                                    <div class="col-xs-2">
+                                        <span class="label label-sm label-default">Pendente</span>
+                                    </div>
+                                    <div class="col-xs-1">FTP</div>
+                                </li>
+                                <li>
+                                    <div class="col-xs-1">MERCEDES-BENZ DO BRASIL</div>
+                                    <div class="col-xs-1">AUTOMÓVEIS</div>
+                                    <div class="col-xs-1">GLA INESPERADO 3DE5</div>
+                                    <div class="col-xs-1">00:30;00</div>
+                                    <div class="col-xs-1">A+V</div>
+                                    <div class="col-xs-1">2017-05-11 14:23:19</div>
+                                    <div class="col-xs-1">1357992002200</div>
+                                    <div class="col-xs-2">SBT Brasília - Luziânia</div>
+                                    <div class="col-xs-2">
+                                        <span class="label label-sm label-warning">Em Processo</span>
+                                        <img src="img/spinner2.gif" width="15px" alt="Em Proceso">
+                                    </div>
+                                    <div class="col-xs-1">FTP</div>
+                                </li>
+                                <li>
+                                    <div class="col-xs-1">MERCEDES-BENZ DO BRASIL</div>
+                                    <div class="col-xs-1">AUTOMÓVEIS</div>
+                                    <div class="col-xs-1">GLA INESPERADO 3DE5</div>
+                                    <div class="col-xs-1">00:30;00</div>
+                                    <div class="col-xs-1">A+V</div>
+                                    <div class="col-xs-1">2017-05-11 14:23:19</div>
+                                    <div class="col-xs-1">1357992002200</div>
+                                    <div class="col-xs-2">SBT - Caceres</div>
+                                    <div class="col-xs-2">
+                                        <span class="label label-sm label-warning">Em Processo</span>
+                                        <img src="img/spinner2.gif" width="15px" alt="Em Proceso">
+                                    </div>
+                                    <div class="col-xs-1">FTP</div>
+                                </li>
+                                <li>
+                                    <div class="col-xs-1">MERCEDES-BENZ DO BRASIL</div>
+                                    <div class="col-xs-1">AUTOMÓVEIS</div>
+                                    <div class="col-xs-1">GLA INESPERADO 3DE5</div>
+                                    <div class="col-xs-1">00:30;00</div>
+                                    <div class="col-xs-1">A+V</div>
+                                    <div class="col-xs-1">2017-05-11 14:23:19</div>
+                                    <div class="col-xs-1">1357992002200</div>
+                                    <div class="col-xs-2">SBT - Cachoeiro de Itapemirim</div>
+                                    <div class="col-xs-2">
+                                        <span class="label label-sm label-warning">Em Processo</span>
+                                        <img src="img/spinner2.gif" width="15px" alt="Em Proceso">
+                                    </div>
+                                    <div class="col-xs-1">FTP</div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--li>
+                            Aquí va otro body-grid con otro envío
+                        </li-->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+       
+    </body>
+</html>

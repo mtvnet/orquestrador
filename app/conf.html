@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Orquestrador</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">  
+
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/ionicons/css/ionicons.min.css">
+        <link rel="stylesheet" href="lib/tippyjs/tippy.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Dosis:400,500&amp;subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/tippyjs/tippy.min.js"></script>
+        <script src="js/theme.js"></script>
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+         <!-- CABECERA -->
+        <header>
+            <!-- Logo Empresa -->
+            <div id="logo_empresa" class="logo-empresa">
+                <h1>Orquestrador</h1>
+                <img src="img/sbt.png" alt="SBT" height="45px">
+            </div>
+            <nav class="navbar navbar-dark navbar-fixed-top">
+                <div class="header-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <!-- Usuario -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true" aria-expanded="false">
+                                 <img src="img/3.jpg" alt="" width="40px" class="img-circle">
+                                 Amália Fagundes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="icon ion-lock-combination"></i> Alterar Senha</a></li>
+                                <li><a href="../index.html"><i class="icon ion-android-exit"></i> Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>            
+            </nav>
+        </header>
+        <!-- MENU PRINCIPAL LATERAL -->
+        <aside id="navaside" class="navmain mini">
+            <div class="side-head">
+                
+                <span id="toggle_aside" class="icon ion-navicon"></span>
+            </div>
+            <!-- Menu navegacion -->
+            <nav  class="navbar-toggleable-xs">
+                <ul class="nav leftnav">
+                    <li><a href="comercial.html"><i class="icon ion-archive"></i><span>Inbox Comercial</span></a></li>
+                    <li><a href="tecnico.html"><i class="icon ion-android-done-all"></i><span>Inbox Técnico</span></a></li>
+                    <li><a href="delivery.html"><i class="icon ion-paper-airplane"></i><span>Acompanhamento</span></a></li>
+                    <li><a href="seguimiento.html"><i class="icon ion-ios-clock-outline"></i><span>Histórico</span></a></li>
+                    <li class="current"><a href="#"><i class="icon ion-android-options"></i><span>Configurações</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="container-fluid wrapcontent">
+            <div class="row heading-page">
+                <div class="col-md-6 col-sm-6">
+                    <h2><i class="icon ion-android-options"></i> Configurações</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#user" role="tab" data-toggle="tab">Usuarios</a></li>
+                            <li role="presentation"><a href="#emisora" role="tab" data-toggle="tab">Emissoras</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="user">
+                                <div class="crea-btn">
+                                    <button class="btn btn-primary">Criar Usuário</button>
+                                </div>
+                                <ul class="header-grid">
+                                    <li class="col-xs-2"></li>
+                                    <li class="col-xs-2">Nome</li>
+                                    <li class="col-xs-2">Apellido</li>
+                                    <li class="col-xs-2">Email</li>
+                                    <li class="col-xs-2">Perfil</li>
+                                    <li class="col-xs-2">Editar</li>
+                                </ul>
+                                <ul class="body-grid">
+                                    <li>
+                                        <div class="col-xs-2">
+                                            <img src="img/0.png" alt="" width="30px" class="img-circle">
+                                        </div>
+                                        <div class="col-xs-2">Marco</div>
+                                        <div class="col-xs-2">Trujillo</div>
+                                        <div class="col-xs-2">mtrujillo@gmail.com</div>
+                                        <div class="col-xs-2">Super Admin</div>
+                                        <div class="col-xs-2">
+                                            
+                                            
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-xs-2">
+                                            <img src="img/1.jpg" alt="" width="30px" class="img-circle">
+                                        </div>
+                                        <div class="col-xs-2">Otávio</div>
+                                        <div class="col-xs-2">Souza</div>
+                                        <div class="col-xs-2">osouza@gmail.com</div>
+                                        <div class="col-xs-2">Comercial</div>
+                                        <div class="col-xs-2">
+                                            <i class="icon ion-android-create m-click"></i>
+                                            <i class="icon ion-ios-trash m-click"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-xs-2">
+                                            <img src="img/4.jpg" alt="" width="30px" class="img-circle">
+                                        </div>
+                                        <div class="col-xs-2">Luiz</div>
+                                        <div class="col-xs-2">Ribeiro</div>
+                                        <div class="col-xs-2">lribeiro@gmail.com</div>
+                                        <div class="col-xs-2">Técnico</div>
+                                        <div class="col-xs-2">
+                                            <i class="icon ion-android-create m-click"></i>
+                                            <i class="icon ion-ios-trash m-click"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-xs-2">
+                                            <img src="img/3.jpg" alt="" width="30px" class="img-circle">
+                                        </div>
+                                        <div class="col-xs-2">Amália</div>
+                                        <div class="col-xs-2">Fagundes</div>
+                                        <div class="col-xs-2">afagundes@gmail.com</div>
+                                        <div class="col-xs-2">Admin</div>
+                                        <div class="col-xs-2">
+                                            <i class="icon ion-android-create m-click"></i>
+                                            <i class="icon ion-ios-trash m-click"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="emisora">
+                                
+                                <div class="crea-btn">
+                                    <button class="btn btn-primary">Adicionar Emissora</button>
+                                </div>
+                                <ul class="header-grid">
+                                    <li class="col-xs-2">Emissora</li>
+                                    <li class="col-xs-1">Entrega</li>
+                                    <li class="col-xs-3">Endereço</li>
+                                    <li class="col-xs-2">Senha</li>
+                                    <li class="col-xs-3">Diretório</li>
+                                    <li class="col-xs-1">Editar</li>
+                                </ul>
+                                <ul class="body-grid">
+                                    <li>
+                                        <div class="col-xs-2">001200-01</div>
+                                        <div class="col-xs-1">FTP</div>
+                                        <div class="col-xs-3">(ftp_01200-01@127.0.0.1:3000)</div>
+                                        <div class="col-xs-2">media</div>
+                                        <div class="col-xs-3">c:/</div>
+                                        <div class="col-xs-1">
+                                            <i class="icon ion-android-create m-click"></i>
+                                            <i class="icon ion-ios-trash m-click"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-xs-2">001310-02</div>
+                                        <div class="col-xs-1">ASPERA</div>
+                                        <div class="col-xs-3">(aspera_001310-02@127.0.1.101:3300)</div>
+                                        <div class="col-xs-2">media</div>
+                                        <div class="col-xs-3">c:/MEDIA/0x005/</div>
+                                        <div class="col-xs-1">
+                                            <i class="icon ion-android-create m-click"></i>
+                                            <i class="icon ion-ios-trash m-click"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="col-xs-2">001445-02</div>
+                                        <div class="col-xs-1">FTP</div>
+                                        <div class="col-xs-3">(ftp_001445-02@127.0.1.100:8000)</div>
+                                        <div class="col-xs-2">media</div>
+                                        <div class="col-xs-3">c:/MEDIA/0x005/</div>
+                                        <div class="col-xs-1">
+                                            <i class="icon ion-android-create m-click"></i>
+                                            <i class="icon ion-ios-trash m-click"></i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
